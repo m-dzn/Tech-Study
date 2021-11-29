@@ -45,6 +45,6 @@
 
 ## 참고자료
 
-[[Javascript] Execution Context와 Lexical Environment](https://iamsjy17.github.io/javascript/2019/06/10/js33_execution_context.html)&nbsp;&nbsp;<span style="color: gold;">by Jewoo.Song</span>
+[[Javascript] Execution Context와 Lexical Environment](https://iamsjy17.github.io/javascript/2019/06/10/js33_execution_context.html)  *by Jewoo.Song*
 
 
