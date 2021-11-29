@@ -37,7 +37,7 @@
    getName.call(student);     // '홍길동'
    ```
    
-   2. bind( )
+2. bind( )
 
 ## 참고자료
 
