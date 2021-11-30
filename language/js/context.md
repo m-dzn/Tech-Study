@@ -105,9 +105,11 @@ nonstrict mode : global object
 
 strict mode : undefined
 
+<br>
+
 ### Environment의 구조
 
-##### 어휘적 환경 (LE)
+#### 어휘적 환경 (LE)
 
 > **Lexical Environment란?**
 > 
@@ -150,7 +152,7 @@ Lexical Environment = {
 }
 ```
 
-##### 변수 환경 (VE)
+#### 변수 환경 (VE)
 
 > **Variable Environment**
 > 
@@ -172,7 +174,30 @@ Variable Environment = {
 }
 ```
 
-## VE와 LE 비교
+#### 어휘적 범위 (LS; Lexical Scope)
+
+> 함수를 선언한 위치에 따라 this가 결정되는 것
+> 
+> *호출 위치에 따라 this가 결정되는 Dynamic Scope와는 다르다*
+
+- JS 함수들은 기본적으로 Lexical Scope를 따른다
+
+```javascript
+var name = '홍길동';
+
+function wrapper() {
+    var name = '이순신';
+    getName();
+}
+function getName() {
+    console.log(name);
+}
+
+wrapper(); // '홍길동'; (getName호출 위치와 무관)
+getName(); // '홍길동';
+```
+
+### VE와 LE 비교
 
 **VE**
 
@@ -197,29 +222,6 @@ Envoironment Record : 호이스팅되지 않는 let, const 등 저장
 5. Global EC 제거 (pop)
    
    ⇒ 프로그램 종료
-
-## 어휘적 범위 (LS; Lexical Scope)
-
-> 함수를 선언한 위치에 따라 this가 결정되는 것
-> 
-> *호출 위치에 따라 this가 결정되는 Dynamic Scope와는 다르다*
-
-- JS 함수들은 기본적으로 Lexical Scope를 따른다
-
-```javascript
-var name = '홍길동';
-
-function wrapper() {
-    var name = '이순신';
-    getName();
-}
-function getName() {
-    console.log(name);
-}
-
-wrapper(); // '홍길동'; (getName호출 위치와 무관)
-getName(); // '홍길동';
-```
 
 ## 주의
 
