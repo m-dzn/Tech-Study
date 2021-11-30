@@ -6,18 +6,24 @@
 
 
 
-## 특징
+## 개요
+
+**특징**
 
 - 변수나 함수를 선언 이전에 사용할 수 있게 해줍니다
 - 상위 scope의 Lexical Environment에 대한 단방향 Linked List 형태로 외부 환경을 참조합니다
 
-## 용어
+<br>
+
+**용어**
 
 - Caller : 다른 컨텍스트를 실행하는 컨텍스트
 
 - Callee : 실행되는 컨텍스트
 
-## 종류
+<br>
+
+**종류**
 
 **Global 실행 컨텍스트**
 
@@ -57,9 +63,23 @@
 
 5. 더 실행할 코드가 없으면 실행 context를 pop 후 결과 반환
 
-## 구조
+### EC 생명주기
 
-### EC의 구조
+1. Global EC 생성
+
+2. 실행 스택에 Push
+
+3. 함수 호출문을 만나면 Functional EC 생성
+
+4. 실행 스택에 Push 후 실행
+   
+   → 실행이 끝난 컨텍스트는 스택에서 pop
+
+5. Global EC 제거 (pop)
+   
+   ⇒ 프로그램 종료
+
+## EC의 구조
 
 ```javascript
 ExecutionContext = {
@@ -107,9 +127,9 @@ strict mode : undefined
 
 <br>
 
-### Environment의 구조
+## Environment의 구조
 
-#### 어휘적 환경 (LE)
+### 어휘적 환경 (LE)
 
 > **Lexical Environment란?**
 > 
@@ -120,6 +140,8 @@ strict mode : undefined
 > let, const 변수가 매핑됩니다
 
 > JS 엔진이 EC를 만들 때 참고할 스펙 정보가 LE입니다
+
+<br>
 
 **특징**
 
@@ -133,11 +155,15 @@ strict mode : undefined
 
 3. 단위 :  local lexical scope (블록 단위 scope)
 
+<br>
+
 **용어**
 
 - identifier : 변수/함수의 이름 (식별자)
 
 - variable : 실제 객체에 대한 참조
+
+<br>
 
 **구조**
 
@@ -152,7 +178,7 @@ Lexical Environment = {
 }
 ```
 
-#### 변수 환경 (VE)
+### 변수 환경 (VE)
 
 > **Variable Environment**
 > 
@@ -174,7 +200,7 @@ Variable Environment = {
 }
 ```
 
-#### 어휘적 범위 (LS; Lexical Scope)
+### 어휘적 범위 (LS; Lexical Scope)
 
 > 함수를 선언한 위치에 따라 this가 결정되는 것
 > 
@@ -201,29 +227,13 @@ getName(); // '홍길동';
 
 **VE**
 
-Environment Record : 호이스팅되는 var, 함수 선언문 저장
+Environment Record : 호이스팅되는 **var**, **함수 선언문** 등을 저장
 
 **LE**
 
-Envoironment Record : 호이스팅되지 않는 let, const 등 저장
+Envoironment Record : 호이스팅되지 않는 **let**, **const** 등을 저장
 
-## EC 생명주기
-
-1. Global EC 생성
-
-2. 실행 스택에 Push
-
-3. 함수 호출문을 만나면 Functional EC 생성
-
-4. 실행 스택에 Push 후 실행
-   
-   → 실행이 끝난 컨텍스트는 스택에서 pop
-
-5. Global EC 제거 (pop)
-   
-   ⇒ 프로그램 종료
-
-## 주의
+## 주의점
 
 1. 함수 표현식은 Hoisting 되지 않습니다
    
