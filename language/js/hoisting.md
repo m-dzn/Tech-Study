@@ -22,8 +22,6 @@ let과 const는 Lexical Environment 내에서 한 번만 선언 가능합니다
 
 ## Temporal Dead Zone
 
-
-
 ## 함수
 
 ### 함수 선언문 (Function Declaration)
