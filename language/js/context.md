@@ -1,25 +1,23 @@
-# 컨텍스트
-
-## 실행 컨텍스트 (EC)
+# 실행 컨텍스트
 
 > **Execution Context**
 > 
 > JS 코드를 실행하기 위한 정보 (변수, 함수, this, arguments, scope, ...) 를 모아놓은 객체 (환경)
 
-### 기본
 
-#### 특징
+
+## 특징
 
 - 변수나 함수를 선언 이전에 사용할 수 있게 해줍니다
 - 상위 scope의 Lexical Environment에 대한 단방향 Linked List 형태로 외부 환경을 참조합니다
 
-#### 용어
+## 용어
 
 - Caller : 다른 컨텍스트를 실행하는 컨텍스트
 
 - Callee : 실행되는 컨텍스트
 
-#### 종류
+## 종류
 
 **Global 실행 컨텍스트**
 
@@ -35,7 +33,7 @@
 - eval( ) 함수 사용 시 생성됩니다
 - 보안상의 취약점을 갖고 있습니다
 
-#### 동작 순서
+## 동작 순서
 
 **Creation Phase**
 
@@ -59,9 +57,9 @@
 
 5. 더 실행할 코드가 없으면 실행 context를 pop 후 결과 반환
 
-### 구조
+## 구조
 
-#### EC의 구조
+### EC의 구조
 
 ```javascript
 ExecutionContext = {
@@ -107,7 +105,7 @@ nonstrict mode : global object
 
 strict mode : undefined
 
-#### Environment의 구조
+### Environment의 구조
 
 ##### 어휘적 환경 (LE)
 
@@ -174,7 +172,7 @@ Variable Environment = {
 }
 ```
 
-### VE와 LE 비교
+## VE와 LE 비교
 
 **VE**
 
@@ -184,7 +182,7 @@ Environment Record : 호이스팅되는 var, 함수 선언문 저장
 
 Envoironment Record : 호이스팅되지 않는 let, const 등 저장
 
-### EC 생명주기
+## EC 생명주기
 
 1. Global EC 생성
 
@@ -236,6 +234,8 @@ getName(); // '홍길동';
    ```
 
     2. Lexical Environment는 직접 조작할 수 없는 이론상의 객체입니다
+
+<br>
 
 ## 참고자료
 

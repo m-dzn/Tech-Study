@@ -11,7 +11,7 @@
 * [JS](language/js/README.md)
   
   * [JS 기본](language/js/js-basic.md)
-  * [컨텍스트](language/js/context.md)
+  * [실행 컨텍스트](language/js/context.md)
   * [This](language/js/this.md)
   * [JS 배열](language/js/array.md)
   * [호이스팅](language/js/hoisting.md)

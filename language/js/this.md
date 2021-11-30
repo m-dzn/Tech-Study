@@ -35,6 +35,7 @@
    getStudentName();                        // undefined
    getStudentName.apply(student, [30]);     // 홍길동 30
    ```
+<br>
 
 3. bind( )
    
