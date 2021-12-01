@@ -18,6 +18,8 @@
    getStudentName();                     // undefined
    getStudentName.call(student, 30);     // 홍길동 30
    ```
+   
+   <br>
 
 2. apply( )
    
@@ -35,7 +37,8 @@
    getStudentName();                        // undefined
    getStudentName.apply(student, [30]);     // 홍길동 30
    ```
-<br>
+   
+   <br>
 
 3. bind( )
    

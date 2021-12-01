@@ -89,7 +89,7 @@ ExecutionContext = {
 }
 ```
 
-##### Environment Record
+### Environment Record
 
 > 현재 실행 환경의 식별자 (변수와 함수) 를 담고 있는 공간
 
@@ -105,13 +105,13 @@ Environment Record: {
 }
 ```
 
-##### outer environment reference
+### outer environment reference
 
 > 부모 Lexical Environment 에 대한 참조
 
 - 스코프 체인을 타고 상위 스코프를 탐색할 때 활용됩니다
 
-##### ThisBinding
+### ThisBinding
 
 **Global 실행 컨텍스트** : global object
 
@@ -198,29 +198,6 @@ Variable Environment = {
     outer environment reference: {}
     ThisBinding: [object]
 }
-```
-
-### 어휘적 범위 (LS; Lexical Scope)
-
-> 함수를 선언한 위치에 따라 this가 결정되는 것
-> 
-> *호출 위치에 따라 this가 결정되는 Dynamic Scope와는 다르다*
-
-- JS 함수들은 기본적으로 Lexical Scope를 따른다
-
-```javascript
-var name = '홍길동';
-
-function wrapper() {
-    var name = '이순신';
-    getName();
-}
-function getName() {
-    console.log(name);
-}
-
-wrapper(); // '홍길동'; (getName호출 위치와 무관)
-getName(); // '홍길동';
 ```
 
 ### VE와 LE 비교
