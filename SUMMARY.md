@@ -18,6 +18,7 @@
   * [콜 스택](language/js/call-stack.md)
   * [변수](language/js/variable.md)
   * [이벤트 루프](language/js/event-loop.md)
+  * [동기-비동기와 블로킹-논블로킹](language/js/sync-blocking.md)
   * [AJAX](language/js/ajax/README.md)
     * [FormData](language/js/ajax/form-data.md)
     * [URIComponent](language/js/ajax/uri-component.md)
