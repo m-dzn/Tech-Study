@@ -19,6 +19,7 @@
   * [변수](language/js/variable.md)
   * [이벤트 루프](language/js/event-loop.md)
   * [동기-비동기와 블로킹-논블로킹](language/js/sync-blocking.md)
+  * [클로저](language/js/closure.md)
   * [AJAX](language/js/ajax/README.md)
     * [FormData](language/js/ajax/form-data.md)
     * [URIComponent](language/js/ajax/uri-component.md)
@@ -51,3 +52,6 @@
 ## 프론트엔드 <a href="fe" id="fe"></a>
 
 - [Vue.js](fe/vue/README.md)
+- [이론](fe/theory/README.md)
+  - [SPA](fe/theory/spa.md)
+  - [CSR과 SSR](fe/theory/csr-ssr.md)

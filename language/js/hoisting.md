@@ -12,7 +12,7 @@
 
 var는 언제든지 재선언과 재할당이 가능합니다
 
-let과 const는 Lexical Environment 내에서 한 번만 선언 가능합니다
+let과 const는 Lexical Environment 내에서 한 번만 선언 가능합니다 <br>
 
 **var** : hoisting 될 때 값이 undefined로 초기화됩니다. 그래서 선언 전에도 사용할 수 있습니다
 

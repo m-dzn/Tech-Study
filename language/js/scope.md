@@ -38,11 +38,11 @@ console.log(catName);         // Django
 
 ## 어휘적 스코프 (LS; Lexical Scope)
 
-> 함수를 선언한 위치에 따라 this가 결정되는 것
+> 함수를 선언한 위치에 따라 this가 결정되는 것을 말합니다.
 > 
-> *호출 위치에 따라 this가 결정되는 Dynamic Scope와는 다르다*
+> *호출 위치에 따라 this가 결정되는 Dynamic Scope와 정반대의 개념입니다.*
 
-- JS 함수들은 기본적으로 Lexical Scope를 따른다
+- JS 함수들은 기본적으로 Lexical Scope를 따릅니다.
 
 ```javascript
 var name = '홍길동';
