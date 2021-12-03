@@ -20,6 +20,7 @@
   * [이벤트 루프](language/js/event-loop.md)
   * [동기-비동기와 블로킹-논블로킹](language/js/sync-blocking.md)
   * [클로저](language/js/closure.md)
+  * [타입](language/js/type.md)
   * [AJAX](language/js/ajax/README.md)
     * [FormData](language/js/ajax/form-data.md)
     * [URIComponent](language/js/ajax/uri-component.md)
@@ -30,6 +31,7 @@
   * [HTTPS](cs/http/https.md)
 * [Web](cs/web/README.md)
   * [클라이언트와 서버](cs/web/client-server.md)
+  * [브라우저 저장소](cs/web/browser-storage.md)
 
 ## 백엔드 <a href="be" id="be"></a>
 

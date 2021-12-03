@@ -14,6 +14,12 @@
 
 **초기화** :  undefined
 
+
+
+# 
+
+
+
 ## 참고자료
 
 [변수의 유효범위와 클로저](https://ko.javascript.info/closure) *모던 JavaScript 튜토리얼*
