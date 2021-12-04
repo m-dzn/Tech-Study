@@ -2,7 +2,7 @@
 
 ## 데이터 타입의 종류
 
-* undefined
+* undefined : 값이 할당되지 않은 상태
 
 * Boolean
 
@@ -21,6 +21,8 @@
 * BigInt
 
 * Symbol (ECMAScript 6에 추가)
+  
+  * 객체 고유의 식별자로 활용
 
 
 
@@ -28,10 +30,14 @@
 
 * Object
 
-* Function
+* Function : 함수를 나타내는 객체형의 일종
 
-* Structural Root Primitive
+* null : '존재하지 않는', '빈' 값을 나타내는 값
   
-  * null
-
-
+  * typeof로 확인해보면 **object**라고 출력
+    
+    → null은 객체가 아님
+    
+    → 하위 호환성을 유지하기 위해 남긴 유산
+  
+  * 다른 언어와는 달리 Null Pointer를 의미하지 않음
