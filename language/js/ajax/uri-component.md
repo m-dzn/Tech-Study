@@ -1,7 +1,5 @@
 # URIComponent
 
-
-
 ## encodeURIComponent
 
 URI 주소에는 한글을 사용하지 못하기 때문에
@@ -16,10 +14,7 @@ const result = await axios.get(
 );
 ```
 
-
-
-<br>
-
+\
 
 
 ## decodeURIComponent

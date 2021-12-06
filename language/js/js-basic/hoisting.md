@@ -1,7 +1,6 @@
 # 호이스팅
 
-> **호이스팅이란?**
-> 한 컨텍스트가 실행되면 가장 먼저 var, let, const 변수와 함수부터 우선 수집되어 자동 선언되는 JS Lexical Environment의 동작 원리를 지칭하는 용어입니다
+> **호이스팅이란?** 한 컨텍스트가 실행되면 가장 먼저 var, let, const 변수와 함수부터 우선 수집되어 자동 선언되는 JS Lexical Environment의 동작 원리를 지칭하는 용어입니다
 
 > Creation Phase가 Execution Phase에 앞서 수행되면서 발생하는 현상입니다
 
@@ -12,7 +11,8 @@
 
 var는 언제든지 재선언과 재할당이 가능합니다
 
-let과 const는 Lexical Environment 내에서 한 번만 선언 가능합니다 <br>
+let과 const는 Lexical Environment 내에서 한 번만 선언 가능합니다\
+
 
 **var** : hoisting 될 때 값이 undefined로 초기화됩니다. 그래서 선언 전에도 사용할 수 있습니다
 
