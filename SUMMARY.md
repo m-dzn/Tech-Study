@@ -28,7 +28,9 @@
 ## CS
 
 * [HTTP](cs/http/README.md)
-  * [HTTPS](cs/http/https.md)
+  - [HTTPS](cs/http/https.md)
+  - [무상태성](cs/http/stateless.md)
+  - [비연결성](cs/http/connectionless.md)
 * [Web](cs/web/README.md)
   * [클라이언트와 서버](cs/web/client-server.md)
   * [브라우저 저장소](cs/web/browser-storage.md)
