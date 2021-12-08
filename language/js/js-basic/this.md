@@ -1,5 +1,17 @@
 # This
 
+## function( ) 과 화살표 함수의 this 차이
+
+### function( )
+
+자기 자신만의 Lexical Scope를 갖기 때문에 this는 function의 스코프를 가리킵니다.
+
+### 화살표 함수
+
+별도의 스코프를 갖지 않고 부모 환경의 Lexical Scope를 참조합니다.
+
+
+
 ## this (실행 컨텍스트) 고정 방법
 
 1.  call( )
