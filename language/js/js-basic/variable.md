@@ -6,23 +6,25 @@
 
 ### 구성
 
+![](../../../.gitbook/assets/structure-of-js-variable.png)
 
-
-
+1. 키워드 (Keyword)
+2. 식별자 (Identifier)
+3. 자료형 (Data type) &#x20;
 
 ### let과 const
 
 **초기화**
 
-&#x20;   let, const를 만나기 전 (Temporal Dead Zone) :
+let, const를 만나기 전 (Temporal Dead Zone) :
 
-&#x20;   let, const를 만난 후 : undefined
+let, const를 만난 후 : undefined
 
 ### var
 
 **초기화** : undefined
 
-## 
+##
 
 ### 참고자료
 
