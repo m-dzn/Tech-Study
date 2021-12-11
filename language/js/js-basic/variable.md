@@ -4,6 +4,12 @@
 
 > 모든 JS 변수는 Environment Record의 Property라 할 수 있습니다
 
+### 구성
+
+
+
+
+
 ### let과 const
 
 **초기화**
