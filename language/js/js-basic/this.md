@@ -50,8 +50,6 @@
     getStudentName.apply(student, [30]);     // 홍길동 30
     ```
 
-    \
-
 3.  bind( )
 
     > 사용법 : 함수.bind(컨텍스트) 후 일반 함수처럼 실행
@@ -67,3 +65,8 @@
     const getStudentName = student.getName.bind(student);
     getStudentName(30);    // 홍길동 30
     ```
+
+## Node의 this
+
+> Node에서 전역 스코프의 this는 module.exports
+> 함수 스코프에서 this는 global 객체를 나타냅니다.
