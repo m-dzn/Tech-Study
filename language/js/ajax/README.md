@@ -8,8 +8,18 @@
 
 ## axios
 
-> XMLHttpRequest 를 쉽게 사용할 수 있게 해주는 라이브러리
+> 비동기 통신을 위한  XMLHttpRequest 를 쉽게 사용할 수 있게 해주는 라이브러리
 
 * axios 메서드들은 Promise를 반환합니다.
   * .then과 .catch를 통해 결과 및 예외를 처리할 수 있습니다.
   * async/await 문법을 적용할 수 있습니다.
+
+```javascript
+async function() {
+    const response = await axios.request({
+        method: 'GET',
+        url: '서버 요청 url',
+        headers: {'content-Type': 'application/json'}
+    });
+}
+```
