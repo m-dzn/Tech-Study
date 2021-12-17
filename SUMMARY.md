@@ -58,6 +58,7 @@
     * [Express body-parser](be/node/express/body-parser.md)
   * [Mongo DB](be/node/mongodb/README.md)
     * [Mongo DB 연결하기](be/node/mongodb/connection.md)
+  * [Sequelize](be/node/sequelize/README.md)
   * [Non Blocking I/O](be/node/non-blocking-io.md)
   * [싱글 스레드](be/node/single-thread.md)
   * [모듈](be/node/module.md)

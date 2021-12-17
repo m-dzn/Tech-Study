@@ -1,0 +1,37 @@
+# Sequelize
+
+## MySQL과 비교
+
+| MySQL    | Sequelize        |
+| -------- | ---------------- |
+| VARCHAR  | String           |
+| INT      | INTEGER          |
+| TINYINT  | BOOLEAN          |
+| DATETIME | DATE             |
+| UNSIGNED | UNSIGNED         |
+| DEFAULT  | defaultValue:    |
+| now()    | Sequelize.NOW    |
+| NOT NULL | allowNull: false |
+| UNIQUE   | unique: true     |
+|          |                  |
+
+## 관계 정의
+
+| 메서드         | 관계         |
+| -------------- | ------------ |
+| .hasMany       | 1:N 또는 1:1 |
+| .belongsTo     | N:1 또는 1:1 |
+| .belongsToMany | N:M          |
+|                |              |
+
+## Op 객체
+
+Op.lt : < 작음
+Op.lte : ≤ 작거나 같음
+Op.gte : ≥ 크거나 같음
+Op.gt : > 큼
+
+Op.ne : 같지 않음
+Op.or : 또는
+Op.in : 목록 중 하나
+Op.notIn : 목록 제외
