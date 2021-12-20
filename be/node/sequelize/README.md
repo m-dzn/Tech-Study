@@ -35,3 +35,12 @@ Op.ne : 같지 않음
 Op.or : 또는
 Op.in : 목록 중 하나
 Op.notIn : 목록 제외
+
+## CLI 명령어
+
+### MySQL DataBase 생성
+
+```shell
+npx sequelize db:create
+```
+
