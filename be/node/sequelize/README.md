@@ -44,3 +44,14 @@ Op.notIn : 목록 제외
 npx sequelize db:create
 ```
 
+
+
+## Sequelize의 메서드
+
+.build( ) : 메모리에 인스턴스를 생성하는 메서드
+
+.save( ) : .build( )로 생성된 인스턴스를 DB에 저장하는 메서드
+
+.create( ) : 위의 .build( )와 .save( )를 동시에 수행하는 메서드
+
+.destroy({ where: { id: 1 } }) : 특정 레코드를 삭제하는 메서드
