@@ -5,7 +5,7 @@
 ## 의존성
 
 ```shell
-yarn add passport bcrypt passport-local
+yarn add passport bcryptㅓ passport-local
 ```
 
 ## 기본 사용 코드
@@ -34,7 +34,7 @@ app.use(passport.session()); // 반드시 express-session보다 아래에서 설
 ### deserializeUser
 
 > deserializeUser는 식별자를 이용해 user 정보를 조회하는 작업을 수행니다.
->
+> 
 > 세션에 최소한의 정보만 담기 위해 수행하는 작업입니다.
 
 * 클라이언트 요청이 올 때마다 호출
@@ -43,5 +43,8 @@ app.use(passport.session()); // 반드시 express-session보다 아래에서 설
 * 매개변수2 : done 함수 (serializeUser와 동일)
   * DB에서 찾은 user 정보는 done 함수를 통해 req.user에 저장됩니다.
 
+## Local 로그인 구현
 
+```javascript
 
+```

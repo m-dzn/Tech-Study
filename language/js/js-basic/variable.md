@@ -24,7 +24,7 @@ let, const를 만난 후 : undefined
 
 **초기화** : undefined
 
-##
+## 
 
 ### 참고자료
 

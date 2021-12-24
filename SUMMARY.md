@@ -9,6 +9,10 @@
 * [JS](language/js/README.md)
   * [JS 기본](language/js/js-basic/README.md)
     * [변수](language/js/js-basic/variable.md)
+    * [이벤트 루프](language/js/js-basic/event-loop.md)
+    * [콜 스택](language/js/js-basic/call-stack.md)
+    * [콜백 큐](language/js/js-basic/callback-queue.md)
+    * [프로토타입](language/js/js-basic/prototype.md)
     * [타입](language/js/js-basic/type/README.md)
       * [형 변환](language/js/js-basic/type/conversion.md)
     * [JS 연산자](language/js/js-basic/operator.md)
@@ -28,6 +32,7 @@
   * [AJAX](language/js/ajax/README.md)
     * [FormData](language/js/ajax/form-data.md)
     * [URIComponent](language/js/ajax/uri-component.md)
+  * [HOC (Higher Order Function)](language/js/hoc.md)
   * [JS 면접 질문 목록](language/js/interview.md)
 
 ## CS
@@ -36,6 +41,7 @@
   * [HTTPS](cs/http/https.md)
   * [무상태성](cs/http/stateless.md)
   * [비연결성](cs/http/connectionless.md)
+  * [Cookie](cs/http/cookie.md)
 * [Web](cs/web/README.md)
   * [클라이언트와 서버](cs/web/client-server.md)
   * [브라우저 저장소](cs/web/browser-storage.md)
@@ -57,6 +63,7 @@
   * [Express](be/node/express/README.md)
     * [Route](be/node/express/route.md)
     * [Express 미들웨어](be/node/express/middlewares.md)
+    * [Express | req 객체](be/node/express/req.md)
     * [Express | res 객체](be/node/express/res.md)
   * [Mongo DB](be/node/mongodb/README.md)
     * [Mongo DB 연결하기](be/node/mongodb/connection.md)
@@ -82,4 +89,3 @@
 
 * [Git](tool/git/README.md)
   * [Git Rebase](tool/git/rebase.md)
-

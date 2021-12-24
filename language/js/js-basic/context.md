@@ -1,7 +1,7 @@
 # 실행 컨텍스트
 
 > **Execution Context**
->
+> 
 > JS 코드를 실행하기 위한 정보 (변수, 함수, this, arguments, scope, ...) 를 모아놓은 객체 (환경)
 
 ## 개요
@@ -13,14 +13,12 @@
 
 \
 
-
 **용어**
 
 * Caller : 다른 컨텍스트를 실행하는 컨텍스트
 * Callee : 실행되는 컨텍스트
 
 \
-
 
 **종류**
 
@@ -42,13 +40,16 @@
 
 **Creation Phase**
 
-1.  VariableEnvironment 컴포넌트 생성
+1. VariableEnvironment 컴포넌트 생성
+   
+   → 변수, arguments 객체, 함수, Scope 정보 등으로 구성
 
-    → 변수, arguments 객체, 함수, Scope 정보 등으로 구성
 2. this 바인딩
-3.  LexicalEnvironment 컴포넌트 생성
 
-    → 현 단계에서는 VariableEnvironment의 사본
+3. LexicalEnvironment 컴포넌트 생성
+   
+   → 현 단계에서는 VariableEnvironment의 사본
+
 4. 콜 스택에 실행 context 객체를 push
 
 **Execution Phase**
@@ -61,14 +62,18 @@
 ### EC 생명주기
 
 1. Global EC 생성
+
 2. 실행 스택에 Push
+
 3. 함수 호출문을 만나면 Functional EC 생성
-4.  실행 스택에 Push 후 실행
 
-    → 실행이 끝난 컨텍스트는 스택에서 pop
-5.  Global EC 제거 (pop)
+4. 실행 스택에 Push 후 실행
+   
+   → 실행이 끝난 컨텍스트는 스택에서 pop
 
-    ⇒ 프로그램 종료
+5. Global EC 제거 (pop)
+   
+   ⇒ 프로그램 종료
 
 ## EC의 구조
 
@@ -117,36 +122,35 @@ strict mode : undefined
 
 \
 
-
 ## Environment의 구조
 
 ### 어휘적 환경 (LE)
 
 > **Lexical Environment란?**
->
+> 
 > 현재 실행 환경의 변수 및 참조 정보를 담고 있는 객체를 말합니다
->
+> 
 > 구체적으로는 **identifier-variable** 쌍을 매핑해 저장한 자료구조라 할 수 있습니다
->
+> 
 > let, const 변수가 매핑됩니다
 
 > JS 엔진이 EC를 만들 때 참고할 스펙 정보가 LE입니다
 
 \
 
-
 **특징**
 
-1.  let, const 변수의 값은 메모리에 매핑될 때 uninitialized로 초기화됩니다
+1. let, const 변수의 값은 메모리에 매핑될 때 uninitialized로 초기화됩니다
+   
+   → 값을 초기화하기 전에는 사용할 수 없습니다
+   
+   → 초기화하지 않고 사용하면 reference error가 발생합니다
 
-    → 값을 초기화하기 전에는 사용할 수 없습니다
-
-    → 초기화하지 않고 사용하면 reference error가 발생합니다
 2. 매개변수와 함수의 지역변수가 저장됩니다
+
 3. 단위 : local lexical scope (블록 단위 scope)
 
 \
-
 
 **용어**
 
@@ -154,7 +158,6 @@ strict mode : undefined
 * variable : 실제 객체에 대한 참조
 
 \
-
 
 **구조**
 
@@ -172,7 +175,7 @@ Lexical Environment = {
 ### 변수 환경 (VE)
 
 > **Variable Environment**
->
+> 
 > var 변수가 매핑됩니다
 
 **특징**
@@ -201,20 +204,19 @@ Envoironment Record : 호이스팅되지 않는 **let**, **const** 등을 저장
 
 ## 주의점
 
-1.  함수 표현식은 Hoisting 되지 않습니다
-
-    ```javascript
-    func(); // Type Error 발생 : func가 undefined이기 때문
-
-    var func = function() {
-        console.log('실행 성공');
-    }
-    ```
+1. 함수 표현식은 Hoisting 되지 않습니다
+   
+   ```javascript
+   func(); // Type Error 발생 : func가 undefined이기 때문
+   
+   var func = function() {
+       console.log('실행 성공');
+   }
+   ```
 
 &#x20;   2\. Lexical Environment는 직접 조작할 수 없는 이론상의 객체입니다
 
 \
-
 
 ## 참고자료
 
